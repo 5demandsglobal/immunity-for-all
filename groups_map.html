@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ff853280254409cb1964cf992508158 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4ff853280254409cb1964cf992508158" ></div>
+        
+    
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+  $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
+
+  </script>
+</head>
+<body>
+
+<div id='maplegend' class='maplegend' 
+    style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
+     border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
+     
+<div class='legend-title'>RENT STRIKE 2020</div>
+<div class='legend-text '>
+    This map gathers groups that are</br>
+    organizing rent strikes.</br>
+    </br>
+    Read more and join the strike at</br>
+    <a href="https://5demands.global/map/"target="_blank">https://5demands.global/map/</a></div>
+</div>
+ 
+</body>
+</html>
+<style type='text/css'>
+  .maplegend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .maplegend .legend-text {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 80%;
+    }
+  .maplegend .legend-source {
+    font-size: 80%;
+    color: #777;
+    clear: both;
+    }
+  .maplegend a {
+    color: #777;
+    }
+</style>
+</body>
+<script>    
+    
+            var map_4ff853280254409cb1964cf992508158 = L.map(
+                "map_4ff853280254409cb1964cf992508158",
+                {
+                    center: [38.0, -97.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6da22b46e2024e54859681d7173b1473 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var marker_62cfcd3518274ba6ab6a65fc6a7b1df3 = L.marker(
+                [33.72470011977264, -84.45471832715862],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_c3ea77891b9b49bc9a6f65117583701b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_62cfcd3518274ba6ab6a65fc6a7b1df3.setIcon(icon_c3ea77891b9b49bc9a6f65117583701b);
+        
+    
+        var popup_d557b1b0c6f74ca69c49eb52c254b023 = L.popup({"maxWidth": 2650});
+
+        
+            var html_e8186e0f4f71482caf1354cd7e354f9e = $(`<div id="html_e8186e0f4f71482caf1354cd7e354f9e" style="width: 100.0%; height: 100.0%;">         <h5>Atlanta Survival Program</h5>         <b>Location:</b> Atlanta, Georgia, USA<br>         <b>Online:</b> <a href=" https://atlsurvival.org/housing/ "target="_blank"> https://atlsurvival.org/housing/</a>.     </div>`)[0];
+            popup_d557b1b0c6f74ca69c49eb52c254b023.setContent(html_e8186e0f4f71482caf1354cd7e354f9e);
+        
+
+        marker_62cfcd3518274ba6ab6a65fc6a7b1df3.bindPopup(popup_d557b1b0c6f74ca69c49eb52c254b023)
+        ;
+
+        
+    
+    
+            var marker_186b6d232e01496ca0ee5d51524bb571 = L.marker(
+                [30.25646785614136, -97.77769964205508],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_6dfbf28abf1b40609b409426cb710888 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_186b6d232e01496ca0ee5d51524bb571.setIcon(icon_6dfbf28abf1b40609b409426cb710888);
+        
+    
+        var popup_80ecbd6aa8c44232a6950410f67fc626 = L.popup({"maxWidth": 2650});
+
+        
+            var html_20fc48e0077a461685191730d9030547 = $(`<div id="html_20fc48e0077a461685191730d9030547" style="width: 100.0%; height: 100.0%;">         <h5>Rent Strike ATX</h5>         <b>Location:</b> Austin, Texas, USA<br>         <b>Online:</b> <a href=" https://www.facebook.com/rentstrikeatx/ "target="_blank"> https://www.facebook.com/rentstrikeatx/</a>.     </div>`)[0];
+            popup_80ecbd6aa8c44232a6950410f67fc626.setContent(html_20fc48e0077a461685191730d9030547);
+        
+
+        marker_186b6d232e01496ca0ee5d51524bb571.bindPopup(popup_80ecbd6aa8c44232a6950410f67fc626)
+        ;
+
+        
+    
+    
+            var marker_f1d54742736a4b8f961b9edad2a277cb = L.marker(
+                [37.71704621524637, -88.82990598945726],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_bcd1e16f05ba447090a6882c42a9e548 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f1d54742736a4b8f961b9edad2a277cb.setIcon(icon_bcd1e16f05ba447090a6882c42a9e548);
+        
+    
+        var popup_fd4e8be442484608a2d54f744307df61 = L.popup({"maxWidth": 2650});
+
+        
+            var html_ec73948613ad46e897381bc6e11278eb = $(`<div id="html_ec73948613ad46e897381bc6e11278eb" style="width: 100.0%; height: 100.0%;">         <h5>Rent Strike Carbondale</h5>         <b>Location:</b> Carbondale, Illinois, USA<br>         <b>Online:</b> <a href=" https://twitter.com/CarbondaleRent "target="_blank"> https://twitter.com/CarbondaleRent</a>.     </div>`)[0];
+            popup_fd4e8be442484608a2d54f744307df61.setContent(html_ec73948613ad46e897381bc6e11278eb);
+        
+
+        marker_f1d54742736a4b8f961b9edad2a277cb.bindPopup(popup_fd4e8be442484608a2d54f744307df61)
+        ;
+
+        
+    
+    
+            var marker_8b1bd84a0f3447bda02e00bae5802c86 = L.marker(
+                [41.884850303237606, -87.82231674999353],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_3857fed53d26480d924d187be85bf89f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8b1bd84a0f3447bda02e00bae5802c86.setIcon(icon_3857fed53d26480d924d187be85bf89f);
+        
+    
+        var popup_cda9129fbc62470f942b67ac4a9f0451 = L.popup({"maxWidth": 2650});
+
+        
+            var html_5a283e5e2a8f4e5a86b6105bc0b0149d = $(`<div id="html_5a283e5e2a8f4e5a86b6105bc0b0149d" style="width: 100.0%; height: 100.0%;">         <h5>Autonomous Tenants Union</h5>         <b>Location:</b> Chicago, Illinois, USA<br>         <b>Online:</b> <a href=" https://autonomoustenantsunion.org/ "target="_blank"> https://autonomoustenantsunion.org/</a>.     </div>`)[0];
+            popup_cda9129fbc62470f942b67ac4a9f0451.setContent(html_5a283e5e2a8f4e5a86b6105bc0b0149d);
+        
+
+        marker_8b1bd84a0f3447bda02e00bae5802c86.bindPopup(popup_cda9129fbc62470f942b67ac4a9f0451)
+        ;
+
+        
+    
+    
+            var marker_f064ad5b034e461db35ca4d236e17051 = L.marker(
+                [41.91088925776761, -87.68041313881238],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_be7785ede7d945c298e779c624ee30e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f064ad5b034e461db35ca4d236e17051.setIcon(icon_be7785ede7d945c298e779c624ee30e9);
+        
+    
+        var popup_26c96e33de4b448c9028acef781e74fd = L.popup({"maxWidth": 2650});
+
+        
+            var html_f7da5dcd11b44cd29a125bf915a7edd3 = $(`<div id="html_f7da5dcd11b44cd29a125bf915a7edd3" style="width: 100.0%; height: 100.0%;">         <h5>Chicago Medical Autonomy</h5>         <b>Location:</b> Chicago, Illinois, USA<br>         <b>Online:</b> <a href=" nan "target="_blank"> nan</a>.     </div>`)[0];
+            popup_26c96e33de4b448c9028acef781e74fd.setContent(html_f7da5dcd11b44cd29a125bf915a7edd3);
+        
+
+        marker_f064ad5b034e461db35ca4d236e17051.bindPopup(popup_26c96e33de4b448c9028acef781e74fd)
+        ;
+
+        
+    
+    
+            var marker_6f5ba93438644ccf9bc32972a7afe8d4 = L.marker(
+                [41.89157029878236, -87.71010199345892],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_289f7c1c3b914e4784efc55c76e3e8a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f5ba93438644ccf9bc32972a7afe8d4.setIcon(icon_289f7c1c3b914e4784efc55c76e3e8a3);
+        
+    
+        var popup_13f73c2fd268424daf852215987851c6 = L.popup({"maxWidth": 2650});
+
+        
+            var html_1dc1cef21f614802b2f0118c3a12661c = $(`<div id="html_1dc1cef21f614802b2f0118c3a12661c" style="width: 100.0%; height: 100.0%;">         <h5>Tenants United</h5>         <b>Location:</b> Chicago, Illinois, USA<br>         <b>Online:</b> <a href=" https://www.tenantsunitedchicago.org/ "target="_blank"> https://www.tenantsunitedchicago.org/</a>.     </div>`)[0];
+            popup_13f73c2fd268424daf852215987851c6.setContent(html_1dc1cef21f614802b2f0118c3a12661c);
+        
+
+        marker_6f5ba93438644ccf9bc32972a7afe8d4.bindPopup(popup_13f73c2fd268424daf852215987851c6)
+        ;
+
+        
+    
+    
+            var marker_11f02c1d16aa4bbb8855f3357f4405ae = L.marker(
+                [39.76410947296566, -104.90066200451338],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_e2576e0988094989a0b5efa8cfa9cdc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11f02c1d16aa4bbb8855f3357f4405ae.setIcon(icon_e2576e0988094989a0b5efa8cfa9cdc2);
+        
+    
+        var popup_a37b97859f1b40d2b7027d4b8dbeae17 = L.popup({"maxWidth": 2650});
+
+        
+            var html_cd05705fecde4afcb3b6b947cef60adb = $(`<div id="html_cd05705fecde4afcb3b6b947cef60adb" style="width: 100.0%; height: 100.0%;">         <h5>Denver Rent Strike COVID-19</h5>         <b>Location:</b> Denver, Colorado, USA<br>         <b>Online:</b> <a href=" https://www.facebook.com/Denverrentstrike/ "target="_blank"> https://www.facebook.com/Denverrentstrike/</a>.     </div>`)[0];
+            popup_a37b97859f1b40d2b7027d4b8dbeae17.setContent(html_cd05705fecde4afcb3b6b947cef60adb);
+        
+
+        marker_11f02c1d16aa4bbb8855f3357f4405ae.bindPopup(popup_a37b97859f1b40d2b7027d4b8dbeae17)
+        ;
+
+        
+    
+    
+            var marker_18607b049cf747c1891dc779aad1e219 = L.marker(
+                [39.70288272453117, -104.79197745479217],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_476cbc4239d444d1a6f9075e9b2a3bdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_18607b049cf747c1891dc779aad1e219.setIcon(icon_476cbc4239d444d1a6f9075e9b2a3bdc);
+        
+    
+        var popup_735845b9f8954c6c98e7c489cb5b3476 = L.popup({"maxWidth": 2650});
+
+        
+            var html_45108cb92cb349f3afce8ae2ba3d1cc7 = $(`<div id="html_45108cb92cb349f3afce8ae2ba3d1cc7" style="width: 100.0%; height: 100.0%;">         <h5>Colorado Rent Strike and Eviction Defense</h5>         <b>Location:</b> Denver, Colorado, USA<br>         <b>Online:</b> <a href=" https://www.facebook.com/groups/2304182553207612/ "target="_blank"> https://www.facebook.com/groups/2304182553207612/</a>.     </div>`)[0];
+            popup_735845b9f8954c6c98e7c489cb5b3476.setContent(html_45108cb92cb349f3afce8ae2ba3d1cc7);
+        
+
+        marker_18607b049cf747c1891dc779aad1e219.bindPopup(popup_735845b9f8954c6c98e7c489cb5b3476)
+        ;
+
+        
+    
+    
+            var marker_1cf31faa24d34173bd4be90981600cca = L.marker(
+                [36.00400907970204, -78.84624535135306],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_a8c9e3519a2a43ba988f557f4d3f0ea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1cf31faa24d34173bd4be90981600cca.setIcon(icon_a8c9e3519a2a43ba988f557f4d3f0ea0);
+        
+    
+        var popup_f8d44f434cfb42c199cb39ea6df096e3 = L.popup({"maxWidth": 2650});
+
+        
+            var html_8e39f6079bee44b295b5fc00b77420b5 = $(`<div id="html_8e39f6079bee44b295b5fc00b77420b5" style="width: 100.0%; height: 100.0%;">         <h5>Can't Pay Won't Pay DURM</h5>         <b>Location:</b> Durham, North Carolina, USA<br>         <b>Online:</b> <a href=" https://cantpaywontpaydurm.org/ "target="_blank"> https://cantpaywontpaydurm.org/</a>.     </div>`)[0];
+            popup_f8d44f434cfb42c199cb39ea6df096e3.setContent(html_8e39f6079bee44b295b5fc00b77420b5);
+        
+
+        marker_1cf31faa24d34173bd4be90981600cca.bindPopup(popup_f8d44f434cfb42c199cb39ea6df096e3)
+        ;
+
+        
+    
+    
+            var marker_d39f067a6ad542de86acdbc0b94eb8bf = L.marker(
+                [35.21492144420268, -111.70215193665709],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_41ea0c594b5f40729a8b7b7d50d58494 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d39f067a6ad542de86acdbc0b94eb8bf.setIcon(icon_41ea0c594b5f40729a8b7b7d50d58494);
+        
+    
+        var popup_ef24c416d2ab4a4e86b7b4d760b0823b = L.popup({"maxWidth": 2650});
+
+        
+            var html_a2a95acee9e744058bc82bae8b498104 = $(`<div id="html_a2a95acee9e744058bc82bae8b498104" style="width: 100.0%; height: 100.0%;">         <h5>Flagstaff Rent Strike</h5>         <b>Location:</b> Flagstaff, Arizona, USA<br>         <b>Online:</b> <a href=" mailto: F9L2g8_Az@protonmail.com "target="_blank"> mailto: F9L2g8_Az@protonmail.com</a>.     </div>`)[0];
+            popup_ef24c416d2ab4a4e86b7b4d760b0823b.setContent(html_a2a95acee9e744058bc82bae8b498104);
+        
+
+        marker_d39f067a6ad542de86acdbc0b94eb8bf.bindPopup(popup_ef24c416d2ab4a4e86b7b4d760b0823b)
+        ;
+
+        
+    
+    
+            var marker_8d6c59e8f37b4b6396b2edb33c0b016d = L.marker(
+                [44.23931704513652, -76.24487448982539],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_5805593aa17d4493b494f36c16f50c72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8d6c59e8f37b4b6396b2edb33c0b016d.setIcon(icon_5805593aa17d4493b494f36c16f50c72);
+        
+    
+        var popup_a359b3d0c4e54e0886f85250216763e7 = L.popup({"maxWidth": 2650});
+
+        
+            var html_1bf2af9ed5364a82a9a9777ae4c57bc9 = $(`<div id="html_1bf2af9ed5364a82a9a9777ae4c57bc9" style="width: 100.0%; height: 100.0%;">         <h5>Rent Strike Kingston </h5>         <b>Location:</b> Kingston, Ontario, Canada<br>         <b>Online:</b> <a href=" https://www.facebook.com/rentstrikekingston/ "target="_blank"> https://www.facebook.com/rentstrikekingston/</a>.     </div>`)[0];
+            popup_a359b3d0c4e54e0886f85250216763e7.setContent(html_1bf2af9ed5364a82a9a9777ae4c57bc9);
+        
+
+        marker_8d6c59e8f37b4b6396b2edb33c0b016d.bindPopup(popup_a359b3d0c4e54e0886f85250216763e7)
+        ;
+
+        
+    
+    
+            var marker_b5736518c9174bf483b764b286996f5d = L.marker(
+                [42.74469828051782, -84.67175668442766],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_6330602803854c70991ca092b803c592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b5736518c9174bf483b764b286996f5d.setIcon(icon_6330602803854c70991ca092b803c592);
+        
+    
+        var popup_39ebe6f0a65b45baa44c3b7f28f87e0a = L.popup({"maxWidth": 2650});
+
+        
+            var html_848cacd508f64a769bec3d38384aaead = $(`<div id="html_848cacd508f64a769bec3d38384aaead" style="width: 100.0%; height: 100.0%;">         <h5>Lansing Solidarity and Defense</h5>         <b>Location:</b> Lansing, Michigan, USA<br>         <b>Online:</b> <a href=" https://www.instagram.com/lansing_solidarity_and_defense/ "target="_blank"> https://www.instagram.com/lansing_solidarity_and_defense/</a>.     </div>`)[0];
+            popup_39ebe6f0a65b45baa44c3b7f28f87e0a.setContent(html_848cacd508f64a769bec3d38384aaead);
+        
+
+        marker_b5736518c9174bf483b764b286996f5d.bindPopup(popup_39ebe6f0a65b45baa44c3b7f28f87e0a)
+        ;
+
+        
+    
+    
+            var marker_365b7fc4b23645f4b70530699af3b1e7 = L.marker(
+                [51.48050503454781, 0.010878730172039636],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_1a8290b671104721bc7855bda6a844ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_365b7fc4b23645f4b70530699af3b1e7.setIcon(icon_1a8290b671104721bc7855bda6a844ee);
+        
+    
+        var popup_881d06b8f8ef430ebdfa39c39d99cc91 = L.popup({"maxWidth": 2650});
+
+        
+            var html_3f58522c0d804d83834fd927dece87f4 = $(`<div id="html_3f58522c0d804d83834fd927dece87f4" style="width: 100.0%; height: 100.0%;">         <h5>Rent Strike London</h5>         <b>Location:</b> London, United Kingdom<br>         <b>Online:</b> <a href=" https://www.change.org/p/all-london-landlords-covid-19-rent-strike-london "target="_blank"> https://www.change.org/p/all-london-landlords-covid-19-rent-strike-london</a>.     </div>`)[0];
+            popup_881d06b8f8ef430ebdfa39c39d99cc91.setContent(html_3f58522c0d804d83834fd927dece87f4);
+        
+
+        marker_365b7fc4b23645f4b70530699af3b1e7.bindPopup(popup_881d06b8f8ef430ebdfa39c39d99cc91)
+        ;
+
+        
+    
+    
+            var marker_30333e21d83b427085c949c0b9f20172 = L.marker(
+                [34.05004367885938, -118.12285222174371],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_6925f8d6d5fb411cabad56db1183dfdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30333e21d83b427085c949c0b9f20172.setIcon(icon_6925f8d6d5fb411cabad56db1183dfdb);
+        
+    
+        var popup_9f83f499611c41f4b8fe6457a80d328a = L.popup({"maxWidth": 2650});
+
+        
+            var html_f3d908e5a5c745cfa403333f4c0ed450 = $(`<div id="html_f3d908e5a5c745cfa403333f4c0ed450" style="width: 100.0%; height: 100.0%;">         <h5>LA Tenants Union</h5>         <b>Location:</b> Los Angeles, California, USA<br>         <b>Online:</b> <a href=" https://latenantsunion.org/ "target="_blank"> https://latenantsunion.org/</a>.     </div>`)[0];
+            popup_9f83f499611c41f4b8fe6457a80d328a.setContent(html_f3d908e5a5c745cfa403333f4c0ed450);
+        
+
+        marker_30333e21d83b427085c949c0b9f20172.bindPopup(popup_9f83f499611c41f4b8fe6457a80d328a)
+        ;
+
+        
+    
+    
+            var marker_457a57924d2d462aa6820dfc4e51e41a = L.marker(
+                [43.07297794045079, -89.41232915391126],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_8b84efc2a03a4c7e839f48c1bc9eb566 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_457a57924d2d462aa6820dfc4e51e41a.setIcon(icon_8b84efc2a03a4c7e839f48c1bc9eb566);
+        
+    
+        var popup_3b71ead0c5354445baa34a77328c0e7d = L.popup({"maxWidth": 2650});
+
+        
+            var html_1228946ef267467b8abf701e08a4fc02 = $(`<div id="html_1228946ef267467b8abf701e08a4fc02" style="width: 100.0%; height: 100.0%;">         <h5>Madison Rent Strike 2020</h5>         <b>Location:</b> Madison, Wisconsin, USA<br>         <b>Online:</b> <a href=" https://form.jotform.com/200834615756155 "target="_blank"> https://form.jotform.com/200834615756155</a>.     </div>`)[0];
+            popup_3b71ead0c5354445baa34a77328c0e7d.setContent(html_1228946ef267467b8abf701e08a4fc02);
+        
+
+        marker_457a57924d2d462aa6820dfc4e51e41a.bindPopup(popup_3b71ead0c5354445baa34a77328c0e7d)
+        ;
+
+        
+    
+    
+            var marker_30a4a8595fba44bdb4e546c66bf9316e = L.marker(
+                [44.99489124131869, -93.13801654309172],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_9698e920aeca4d99903ad76229788858 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30a4a8595fba44bdb4e546c66bf9316e.setIcon(icon_9698e920aeca4d99903ad76229788858);
+        
+    
+        var popup_34c3ec61f78d476baaf502ae0c716d49 = L.popup({"maxWidth": 2650});
+
+        
+            var html_97cf2d739bed430383fa0550a37ad981 = $(`<div id="html_97cf2d739bed430383fa0550a37ad981" style="width: 100.0%; height: 100.0%;">         <h5>Rent Strike Twin Cities</h5>         <b>Location:</b> Minneapolis, Minnesota<br>         <b>Online:</b> <a href=" https://twitter.com/RentStrikeMN "target="_blank"> https://twitter.com/RentStrikeMN</a>.     </div>`)[0];
+            popup_34c3ec61f78d476baaf502ae0c716d49.setContent(html_97cf2d739bed430383fa0550a37ad981);
+        
+
+        marker_30a4a8595fba44bdb4e546c66bf9316e.bindPopup(popup_34c3ec61f78d476baaf502ae0c716d49)
+        ;
+
+        
+    
+    
+            var marker_84b92dc485784d289b16daa5d6059d74 = L.marker(
+                [44.98312258138167, -93.33229781123006],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_c1bf88f3d7f14090966568e3e4fd99d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_84b92dc485784d289b16daa5d6059d74.setIcon(icon_c1bf88f3d7f14090966568e3e4fd99d4);
+        
+    
+        var popup_fbf5ca55eddc4df39d880d25433e96f1 = L.popup({"maxWidth": 2650});
+
+        
+            var html_d31e51882ba2478997efec66039b91e8 = $(`<div id="html_d31e51882ba2478997efec66039b91e8" style="width: 100.0%; height: 100.0%;">         <h5>10th Floor Renters </h5>         <b>Location:</b> Minneapolis, Minnesota<br>         <b>Online:</b> <a href=" nan "target="_blank"> nan</a>.     </div>`)[0];
+            popup_fbf5ca55eddc4df39d880d25433e96f1.setContent(html_d31e51882ba2478997efec66039b91e8);
+        
+
+        marker_84b92dc485784d289b16daa5d6059d74.bindPopup(popup_fbf5ca55eddc4df39d880d25433e96f1)
+        ;
+
+        
+    
+    
+            var marker_7bd989b732cb477c9441044825c39b93 = L.marker(
+                [45.48661494611411, -73.46063339301782],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_08ac369cc80148e0b6d7ec753a8beb11 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7bd989b732cb477c9441044825c39b93.setIcon(icon_08ac369cc80148e0b6d7ec753a8beb11);
+        
+    
+        var popup_96ce51d7d28c4caba068c218d921f088 = L.popup({"maxWidth": 2650});
+
+        
+            var html_d570e841eecd4147b143dfe575a57c85 = $(`<div id="html_d570e841eecd4147b143dfe575a57c85" style="width: 100.0%; height: 100.0%;">         <h5>Greve des Loyers </h5>         <b>Location:</b> Montreal, Quebec, Canada<br>         <b>Online:</b> <a href=" https://grevedesloyers.info/ "target="_blank"> https://grevedesloyers.info/</a>.     </div>`)[0];
+            popup_96ce51d7d28c4caba068c218d921f088.setContent(html_d570e841eecd4147b143dfe575a57c85);
+        
+
+        marker_7bd989b732cb477c9441044825c39b93.bindPopup(popup_96ce51d7d28c4caba068c218d921f088)
+        ;
+
+        
+    
+    
+            var marker_79fce99816564342bdcd8814331e454e = L.marker(
+                [40.74502224632374, -73.88267141377223],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_32f194a3559d43679f6e5621d3a0740c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_79fce99816564342bdcd8814331e454e.setIcon(icon_32f194a3559d43679f6e5621d3a0740c);
+        
+    
+        var popup_f5d4e6fa1c554a65bd61b394e959fd6c = L.popup({"maxWidth": 2650});
+
+        
+            var html_a3138665be244cb4af6e7536db0c4507 = $(`<div id="html_a3138665be244cb4af6e7536db0c4507" style="width: 100.0%; height: 100.0%;">         <h5>COVID-19 Rent Strike</h5>         <b>Location:</b> New York City, New York, USA<br>         <b>Online:</b> <a href=" https://www.nycrentstrike.com/ "target="_blank"> https://www.nycrentstrike.com/</a>.     </div>`)[0];
+            popup_f5d4e6fa1c554a65bd61b394e959fd6c.setContent(html_a3138665be244cb4af6e7536db0c4507);
+        
+
+        marker_79fce99816564342bdcd8814331e454e.bindPopup(popup_f5d4e6fa1c554a65bd61b394e959fd6c)
+        ;
+
+        
+    
+    
+            var marker_88075a14acf04386b72fe9e0f745a943 = L.marker(
+                [36.906413060841416, -76.21158839971248],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_5db23d3c61f1424e88222a4b7bfc94e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_88075a14acf04386b72fe9e0f745a943.setIcon(icon_5db23d3c61f1424e88222a4b7bfc94e7);
+        
+    
+        var popup_11ec258f5a9b40fcbecce0b2bac8d54d = L.popup({"maxWidth": 2650});
+
+        
+            var html_6b34edb629104f539125a4b0db4ca3fb = $(`<div id="html_6b34edb629104f539125a4b0db4ca3fb" style="width: 100.0%; height: 100.0%;">         <h5>Tidewater Workers Union</h5>         <b>Location:</b> Norfolk, Virginia, USA<br>         <b>Online:</b> <a href=" http://tidewaterworkersunion.org/ "target="_blank"> http://tidewaterworkersunion.org/</a>.     </div>`)[0];
+            popup_11ec258f5a9b40fcbecce0b2bac8d54d.setContent(html_6b34edb629104f539125a4b0db4ca3fb);
+        
+
+        marker_88075a14acf04386b72fe9e0f745a943.bindPopup(popup_11ec258f5a9b40fcbecce0b2bac8d54d)
+        ;
+
+        
+    
+    
+            var marker_1a4843c6d3ce41bba7f0f3a5cf1b3bc2 = L.marker(
+                [47.05579215529321, -122.796618124424],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_39c38f7262f44c21890e2f29fa6c1a65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1a4843c6d3ce41bba7f0f3a5cf1b3bc2.setIcon(icon_39c38f7262f44c21890e2f29fa6c1a65);
+        
+    
+        var popup_6348dcbb29d048cd8187ef546ef3618d = L.popup({"maxWidth": 2650});
+
+        
+            var html_3f4cff68dcea48a6a447152ef5df8624 = $(`<div id="html_3f4cff68dcea48a6a447152ef5df8624" style="width: 100.0%; height: 100.0%;">         <h5>Olympia Assembly</h5>         <b>Location:</b> Olympia, Washington, USA<br>         <b>Online:</b> <a href=" https://olyassembly.org/rentstrike/ "target="_blank"> https://olyassembly.org/rentstrike/</a>.     </div>`)[0];
+            popup_6348dcbb29d048cd8187ef546ef3618d.setContent(html_3f4cff68dcea48a6a447152ef5df8624);
+        
+
+        marker_1a4843c6d3ce41bba7f0f3a5cf1b3bc2.bindPopup(popup_6348dcbb29d048cd8187ef546ef3618d)
+        ;
+
+        
+    
+    
+            var marker_a7c803cfd0b94483bbcd9058aee80d20 = L.marker(
+                [44.23894768774408, -76.56574790633609],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_3ee45de54b154bc58cabdd3613d9cc71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a7c803cfd0b94483bbcd9058aee80d20.setIcon(icon_3ee45de54b154bc58cabdd3613d9cc71);
+        
+    
+        var popup_9d37d1dc318b4bccb16d650c2ad4adde = L.popup({"maxWidth": 2650});
+
+        
+            var html_6ec5ef41faaf4557b63f439e454b097b = $(`<div id="html_6ec5ef41faaf4557b63f439e454b097b" style="width: 100.0%; height: 100.0%;">         <h5>Mutual Aid Katarokwi COVID-19</h5>         <b>Location:</b> Kingston, Ontario, Canada<br>         <b>Online:</b> <a href=" https://mutualaidkatarokwi.wordpress.com/ "target="_blank"> https://mutualaidkatarokwi.wordpress.com/</a>.     </div>`)[0];
+            popup_9d37d1dc318b4bccb16d650c2ad4adde.setContent(html_6ec5ef41faaf4557b63f439e454b097b);
+        
+
+        marker_a7c803cfd0b94483bbcd9058aee80d20.bindPopup(popup_9d37d1dc318b4bccb16d650c2ad4adde)
+        ;
+
+        
+    
+    
+            var marker_2a81ca18ae1f4401a861b052b316f3c4 = L.marker(
+                [45.44603856337877, -75.7265013321989],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_c1906227789044f7bc8279868b4ffa04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2a81ca18ae1f4401a861b052b316f3c4.setIcon(icon_c1906227789044f7bc8279868b4ffa04);
+        
+    
+        var popup_87f5baa38a634f5186bd1ff05fa69016 = L.popup({"maxWidth": 2650});
+
+        
+            var html_4ac12471d71c493f8d0783776b81ffd3 = $(`<div id="html_4ac12471d71c493f8d0783776b81ffd3" style="width: 100.0%; height: 100.0%;">         <h5>COVID-19 Rent Strike Ottawa</h5>         <b>Location:</b> Ottawa, Canada<br>         <b>Online:</b> <a href=" facebook.com/groups/ottawarentstrike "target="_blank"> facebook.com/groups/ottawarentstrike</a>.     </div>`)[0];
+            popup_87f5baa38a634f5186bd1ff05fa69016.setContent(html_4ac12471d71c493f8d0783776b81ffd3);
+        
+
+        marker_2a81ca18ae1f4401a861b052b316f3c4.bindPopup(popup_87f5baa38a634f5186bd1ff05fa69016)
+        ;
+
+        
+    
+    
+            var marker_fe70167e07b0475685795a187e9b299d = L.marker(
+                [26.634837945054734, -80.56792931029881],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_d8e3ba6dcff5487ebdc0c91656700ea5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe70167e07b0475685795a187e9b299d.setIcon(icon_d8e3ba6dcff5487ebdc0c91656700ea5);
+        
+    
+        var popup_8eb46f6df0454cce9873da3c64566264 = L.popup({"maxWidth": 2650});
+
+        
+            var html_4521289c90cc433ba55084ca3c06b3fb = $(`<div id="html_4521289c90cc433ba55084ca3c06b3fb" style="width: 100.0%; height: 100.0%;">         <h5>Palm Beach County Tenants Union</h5>         <b>Location:</b> Palm Beach, Florida, USA<br>         <b>Online:</b> <a href=" https://www.pbctu.org/ "target="_blank"> https://www.pbctu.org/</a>.     </div>`)[0];
+            popup_8eb46f6df0454cce9873da3c64566264.setContent(html_4521289c90cc433ba55084ca3c06b3fb);
+        
+
+        marker_fe70167e07b0475685795a187e9b299d.bindPopup(popup_8eb46f6df0454cce9873da3c64566264)
+        ;
+
+        
+    
+    
+            var marker_cc451cdf9a884ba4a613afd394c03cc9 = L.marker(
+                [39.9515564194039, -75.36651246057457],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_f288e768bff443aea81bf9533986562d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc451cdf9a884ba4a613afd394c03cc9.setIcon(icon_f288e768bff443aea81bf9533986562d);
+        
+    
+        var popup_fd747003e1954508b179dc0a4bd3b3d9 = L.popup({"maxWidth": 2650});
+
+        
+            var html_16db4af8841d49138c149121267a7dbe = $(`<div id="html_16db4af8841d49138c149121267a7dbe" style="width: 100.0%; height: 100.0%;">         <h5>Philadelphia Tenants Union</h5>         <b>Location:</b> Philadelphia, Pennsylvania, USA<br>         <b>Online:</b> <a href=" http://phillytenantsunion.org/covid-19/ "target="_blank"> http://phillytenantsunion.org/covid-19/</a>.     </div>`)[0];
+            popup_fd747003e1954508b179dc0a4bd3b3d9.setContent(html_16db4af8841d49138c149121267a7dbe);
+        
+
+        marker_cc451cdf9a884ba4a613afd394c03cc9.bindPopup(popup_fd747003e1954508b179dc0a4bd3b3d9)
+        ;
+
+        
+    
+    
+            var marker_3221761b115e46d18931c78d28eecabc = L.marker(
+                [39.93341370609367, -75.09540823185421],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_4ff60872c8f34b0c9056f61f40d983ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3221761b115e46d18931c78d28eecabc.setIcon(icon_4ff60872c8f34b0c9056f61f40d983ec);
+        
+    
+        var popup_976edba7eba9444aa5fd59b1a8952df1 = L.popup({"maxWidth": 2650});
+
+        
+            var html_4aa563c6727f4317a1400f8ada21782f = $(`<div id="html_4aa563c6727f4317a1400f8ada21782f" style="width: 100.0%; height: 100.0%;">         <h5>Tools 4 Tenants</h5>         <b>Location:</b> Philadelphia, Pennsylvania, USA<br>         <b>Online:</b> <a href=" http://tinyurl.com/tools4tenantsPHL "target="_blank"> http://tinyurl.com/tools4tenantsPHL</a>.     </div>`)[0];
+            popup_976edba7eba9444aa5fd59b1a8952df1.setContent(html_4aa563c6727f4317a1400f8ada21782f);
+        
+
+        marker_3221761b115e46d18931c78d28eecabc.bindPopup(popup_976edba7eba9444aa5fd59b1a8952df1)
+        ;
+
+        
+    
+    
+            var marker_b853ebf9be914ab29a9fdaf17e09f791 = L.marker(
+                [45.51511596864353, -122.55805405033665],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_8f61dff1955b47e3b81ac63080f7f6bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b853ebf9be914ab29a9fdaf17e09f791.setIcon(icon_8f61dff1955b47e3b81ac63080f7f6bd);
+        
+    
+        var popup_5e32b99c12a04b90aff4f341765a9e74 = L.popup({"maxWidth": 2650});
+
+        
+            var html_137a33cc8f784dd596a90abb5b06a3e4 = $(`<div id="html_137a33cc8f784dd596a90abb5b06a3e4" style="width: 100.0%; height: 100.0%;">         <h5>PDX Rent Strike</h5>         <b>Location:</b> Portland, Oregon, USA<br>         <b>Online:</b> <a href=" https://twitter.com/pdxrentstrike "target="_blank"> https://twitter.com/pdxrentstrike</a>.     </div>`)[0];
+            popup_5e32b99c12a04b90aff4f341765a9e74.setContent(html_137a33cc8f784dd596a90abb5b06a3e4);
+        
+
+        marker_b853ebf9be914ab29a9fdaf17e09f791.bindPopup(popup_5e32b99c12a04b90aff4f341765a9e74)
+        ;
+
+        
+    
+    
+            var marker_5acecee84c00446d9d867a0b6d3f0f71 = L.marker(
+                [37.554488531827346, -77.3523872136639],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_d0c0e6d5ef494f63b1a497820eabc4e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5acecee84c00446d9d867a0b6d3f0f71.setIcon(icon_d0c0e6d5ef494f63b1a497820eabc4e9);
+        
+    
+        var popup_cd66dd783ac1416e96a6942f1ea36958 = L.popup({"maxWidth": 2650});
+
+        
+            var html_11214748dc8b4e429155dbffc1a8ea39 = $(`<div id="html_11214748dc8b4e429155dbffc1a8ea39" style="width: 100.0%; height: 100.0%;">         <h5>Eagle Mill Rent Strike</h5>         <b>Location:</b> Richmond, Virginia, USA<br>         <b>Online:</b> <a href=" https://twitter.com/EMrentstrike "target="_blank"> https://twitter.com/EMrentstrike</a>.     </div>`)[0];
+            popup_cd66dd783ac1416e96a6942f1ea36958.setContent(html_11214748dc8b4e429155dbffc1a8ea39);
+        
+
+        marker_5acecee84c00446d9d867a0b6d3f0f71.bindPopup(popup_cd66dd783ac1416e96a6942f1ea36958)
+        ;
+
+        
+    
+    
+            var marker_e887c7473da24c8b95f98ef07f8b1e53 = L.marker(
+                [37.52107220289684, -77.56185305581981],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_fdbcde3e2dbf44189d0d41102481a6fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e887c7473da24c8b95f98ef07f8b1e53.setIcon(icon_fdbcde3e2dbf44189d0d41102481a6fc);
+        
+    
+        var popup_9b689f3d998d402c970ca93d47d6d209 = L.popup({"maxWidth": 2650});
+
+        
+            var html_e844632f25564f71948cbeb594848573 = $(`<div id="html_e844632f25564f71948cbeb594848573" style="width: 100.0%; height: 100.0%;">         <h5>Pollard & Bagby Tenants Council</h5>         <b>Location:</b> Richmond, Virginia, USA<br>         <b>Online:</b> <a href=" mailto: pbtenantscouncil@protonmail.com "target="_blank"> mailto: pbtenantscouncil@protonmail.com</a>.     </div>`)[0];
+            popup_9b689f3d998d402c970ca93d47d6d209.setContent(html_e844632f25564f71948cbeb594848573);
+        
+
+        marker_e887c7473da24c8b95f98ef07f8b1e53.bindPopup(popup_9b689f3d998d402c970ca93d47d6d209)
+        ;
+
+        
+    
+    
+            var marker_da6da95d252549b78273f6aeec86101c = L.marker(
+                [37.548452417873406, -77.7224967233904],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_2604eff885df44a990e2b12c70ef7a47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da6da95d252549b78273f6aeec86101c.setIcon(icon_2604eff885df44a990e2b12c70ef7a47);
+        
+    
+        var popup_54c6da1fa1654547a87e8985c2696428 = L.popup({"maxWidth": 2650});
+
+        
+            var html_57003b7129184f2a880b437baf5936fd = $(`<div id="html_57003b7129184f2a880b437baf5936fd" style="width: 100.0%; height: 100.0%;">         <h5>Richmond Tenants Defense Council</h5>         <b>Location:</b> Richmond, Virginia, USA<br>         <b>Online:</b> <a href=" https://twitter.com/TenantCouncil "target="_blank"> https://twitter.com/TenantCouncil</a>.     </div>`)[0];
+            popup_54c6da1fa1654547a87e8985c2696428.setContent(html_57003b7129184f2a880b437baf5936fd);
+        
+
+        marker_da6da95d252549b78273f6aeec86101c.bindPopup(popup_54c6da1fa1654547a87e8985c2696428)
+        ;
+
+        
+    
+    
+            var marker_b3d0827cc3ba4fbb9e5849cc531d99a9 = L.marker(
+                [37.78407858296741, -122.39602366387716],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_0f5ab2fbf3c7482a866d821cb2e88889 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3d0827cc3ba4fbb9e5849cc531d99a9.setIcon(icon_0f5ab2fbf3c7482a866d821cb2e88889);
+        
+    
+        var popup_d8b4ecaa72384d0d8ecaf479927ede9e = L.popup({"maxWidth": 2650});
+
+        
+            var html_39e35440c4494db885e92d40c8766759 = $(`<div id="html_39e35440c4494db885e92d40c8766759" style="width: 100.0%; height: 100.0%;">         <h5>Bay Area Rent Strike</h5>         <b>Location:</b> San Francisco, California, USA<br>         <b>Online:</b> <a href=" http://www.bayarearentstrike.com/ "target="_blank"> http://www.bayarearentstrike.com/</a>.     </div>`)[0];
+            popup_d8b4ecaa72384d0d8ecaf479927ede9e.setContent(html_39e35440c4494db885e92d40c8766759);
+        
+
+        marker_b3d0827cc3ba4fbb9e5849cc531d99a9.bindPopup(popup_d8b4ecaa72384d0d8ecaf479927ede9e)
+        ;
+
+        
+    
+    
+            var marker_b05a44ddfa3647ebaee0b3a280cce161 = L.marker(
+                [37.754529982548945, -122.56647251734994],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_81e55f7b257e4450819ce7510566e25c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b05a44ddfa3647ebaee0b3a280cce161.setIcon(icon_81e55f7b257e4450819ce7510566e25c);
+        
+    
+        var popup_8dfc082a302740549af7909b38f2b2ef = L.popup({"maxWidth": 2650});
+
+        
+            var html_0903409f6c664792a679868789a15ecd = $(`<div id="html_0903409f6c664792a679868789a15ecd" style="width: 100.0%; height: 100.0%;">         <h5>Station 40</h5>         <b>Location:</b> San Francisco, California, USA<br>         <b>Online:</b> <a href=" nan "target="_blank"> nan</a>.     </div>`)[0];
+            popup_8dfc082a302740549af7909b38f2b2ef.setContent(html_0903409f6c664792a679868789a15ecd);
+        
+
+        marker_b05a44ddfa3647ebaee0b3a280cce161.bindPopup(popup_8dfc082a302740549af7909b38f2b2ef)
+        ;
+
+        
+    
+    
+            var marker_ea0dd6aa7b1643e8baa16222bfa93257 = L.marker(
+                [37.746855891251414, -122.37818455859525],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_37fba0ebdb9a45e2b35d8b53ebd48250 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea0dd6aa7b1643e8baa16222bfa93257.setIcon(icon_37fba0ebdb9a45e2b35d8b53ebd48250);
+        
+    
+        var popup_35856184e97c44fab404e993139275dd = L.popup({"maxWidth": 2650});
+
+        
+            var html_c2699ed3b45440c5a4e93b9fa271d0c3 = $(`<div id="html_c2699ed3b45440c5a4e93b9fa271d0c3" style="width: 100.0%; height: 100.0%;">         <h5>Tenant and Neighbor Council</h5>         <b>Location:</b> San Francisco, California, USA<br>         <b>Online:</b> <a href=" https://www.facebook.com/baytanc/ "target="_blank"> https://www.facebook.com/baytanc/</a>.     </div>`)[0];
+            popup_35856184e97c44fab404e993139275dd.setContent(html_c2699ed3b45440c5a4e93b9fa271d0c3);
+        
+
+        marker_ea0dd6aa7b1643e8baa16222bfa93257.bindPopup(popup_35856184e97c44fab404e993139275dd)
+        ;
+
+        
+    
+    
+            var marker_653503cac3d3470baa98838751e437c2 = L.marker(
+                [37.74632024598687, -122.31040476275761],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_08951627a88544f78f5492b3b17e0823 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_653503cac3d3470baa98838751e437c2.setIcon(icon_08951627a88544f78f5492b3b17e0823);
+        
+    
+        var popup_6535dedfa980478a8e0a8825a510f14f = L.popup({"maxWidth": 2650});
+
+        
+            var html_f7a0e16774cb47ad93879d39578d9698 = $(`<div id="html_f7a0e16774cb47ad93879d39578d9698" style="width: 100.0%; height: 100.0%;">         <h5>Oakland Tenants Union</h5>         <b>Location:</b> San Francisco, California, USA<br>         <b>Online:</b> <a href=" http://www.oaklandtenantsunion.org/ "target="_blank"> http://www.oaklandtenantsunion.org/</a>.     </div>`)[0];
+            popup_6535dedfa980478a8e0a8825a510f14f.setContent(html_f7a0e16774cb47ad93879d39578d9698);
+        
+
+        marker_653503cac3d3470baa98838751e437c2.bindPopup(popup_6535dedfa980478a8e0a8825a510f14f)
+        ;
+
+        
+    
+    
+            var marker_3ff67219073c443e92066dc58ccbcf3f = L.marker(
+                [37.79278731791923, -122.42312706119125],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_27e6ade7edb140ee92165625732b5c5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ff67219073c443e92066dc58ccbcf3f.setIcon(icon_27e6ade7edb140ee92165625732b5c5b);
+        
+    
+        var popup_2aa4a4ec6b28457992b4cdf9049c13b2 = L.popup({"maxWidth": 2650});
+
+        
+            var html_61d806a091c14872a2c5186b990f57fb = $(`<div id="html_61d806a091c14872a2c5186b990f57fb" style="width: 100.0%; height: 100.0%;">         <h5>SF Eviction Defense Collaborative</h5>         <b>Location:</b> San Francisco, California, USA<br>         <b>Online:</b> <a href=" https://evictiondefense.org/ "target="_blank"> https://evictiondefense.org/</a>.     </div>`)[0];
+            popup_2aa4a4ec6b28457992b4cdf9049c13b2.setContent(html_61d806a091c14872a2c5186b990f57fb);
+        
+
+        marker_3ff67219073c443e92066dc58ccbcf3f.bindPopup(popup_2aa4a4ec6b28457992b4cdf9049c13b2)
+        ;
+
+        
+    
+    
+            var marker_34f94b31d8574685a5239d1731013b91 = L.marker(
+                [37.78705532190281, -122.39527788741465],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_eab85398d53047c7874743580834a6fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_34f94b31d8574685a5239d1731013b91.setIcon(icon_eab85398d53047c7874743580834a6fc);
+        
+    
+        var popup_202c6472a421479680dd8bc7bc86535b = L.popup({"maxWidth": 2650});
+
+        
+            var html_9267fa7267924ddc82ee0e426e7ee8d7 = $(`<div id="html_9267fa7267924ddc82ee0e426e7ee8d7" style="width: 100.0%; height: 100.0%;">         <h5>Tenants Together</h5>         <b>Location:</b> San Francisco, California, USA<br>         <b>Online:</b> <a href=" http://www.tenantstogether.org/ "target="_blank"> http://www.tenantstogether.org/</a>.     </div>`)[0];
+            popup_202c6472a421479680dd8bc7bc86535b.setContent(html_9267fa7267924ddc82ee0e426e7ee8d7);
+        
+
+        marker_34f94b31d8574685a5239d1731013b91.bindPopup(popup_202c6472a421479680dd8bc7bc86535b)
+        ;
+
+        
+    
+    
+            var marker_fad317d0905c47c3ad9fb9fa3e171cfa = L.marker(
+                [37.05560718624568, -121.86877474703692],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_c7eb47b05d0d45c09ad563233ddd5be5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fad317d0905c47c3ad9fb9fa3e171cfa.setIcon(icon_c7eb47b05d0d45c09ad563233ddd5be5);
+        
+    
+        var popup_4fcfa9abdc1346359fd78d0c0015d40f = L.popup({"maxWidth": 2650});
+
+        
+            var html_12d847acf97b443199b6c93bb28299f7 = $(`<div id="html_12d847acf97b443199b6c93bb28299f7" style="width: 100.0%; height: 100.0%;">         <h5>Drop Rent Santa Cruz</h5>         <b>Location:</b> Santa Cruz, California, USA<br>         <b>Online:</b> <a href=" http://droprentsc.com/ "target="_blank"> http://droprentsc.com/</a>.     </div>`)[0];
+            popup_4fcfa9abdc1346359fd78d0c0015d40f.setContent(html_12d847acf97b443199b6c93bb28299f7);
+        
+
+        marker_fad317d0905c47c3ad9fb9fa3e171cfa.bindPopup(popup_4fcfa9abdc1346359fd78d0c0015d40f)
+        ;
+
+        
+    
+    
+            var marker_fede7965818342a894de284777683715 = L.marker(
+                [47.61392560619432, -122.33945300061488],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_529333dcda244d09b16662dbb7036107 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fede7965818342a894de284777683715.setIcon(icon_529333dcda244d09b16662dbb7036107);
+        
+    
+        var popup_eba5e57747704bf09a2e35bd54a8c1db = L.popup({"maxWidth": 2650});
+
+        
+            var html_06e3462e58b7403981dc544f17fe30f7 = $(`<div id="html_06e3462e58b7403981dc544f17fe30f7" style="width: 100.0%; height: 100.0%;">         <h5>Seattle Rent Strike</h5>         <b>Location:</b> Seattle, Washington, USA<br>         <b>Online:</b> <a href=" http://rentstrike.noblogs.org/ "target="_blank"> http://rentstrike.noblogs.org/</a>.     </div>`)[0];
+            popup_eba5e57747704bf09a2e35bd54a8c1db.setContent(html_06e3462e58b7403981dc544f17fe30f7);
+        
+
+        marker_fede7965818342a894de284777683715.bindPopup(popup_eba5e57747704bf09a2e35bd54a8c1db)
+        ;
+
+        
+    
+    
+            var marker_cc38da69423c4ee8960d93b9656f7b1d = L.marker(
+                [47.6160187781012, -122.34816144643918],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_16a969f98cc440cabca86173c8c0ca7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cc38da69423c4ee8960d93b9656f7b1d.setIcon(icon_16a969f98cc440cabca86173c8c0ca7d);
+        
+    
+        var popup_a9d72eae3b0f400eb10e990b74cb8389 = L.popup({"maxWidth": 2650});
+
+        
+            var html_5b593313abbd4c3db110e4a336ade271 = $(`<div id="html_5b593313abbd4c3db110e4a336ade271" style="width: 100.0%; height: 100.0%;">         <h5>Puget Sound Rent Relief</h5>         <b>Location:</b> Seattle, Washington, USA<br>         <b>Online:</b> <a href=" http://rentrelief.net/ "target="_blank"> http://rentrelief.net/</a>.     </div>`)[0];
+            popup_a9d72eae3b0f400eb10e990b74cb8389.setContent(html_5b593313abbd4c3db110e4a336ade271);
+        
+
+        marker_cc38da69423c4ee8960d93b9656f7b1d.bindPopup(popup_a9d72eae3b0f400eb10e990b74cb8389)
+        ;
+
+        
+    
+    
+            var marker_239bfaf5708244ed9a963894d6cb4a20 = L.marker(
+                [38.644620531695395, -90.25036171467997],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_4028a25d2794418e85400c5bbfab9b6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_239bfaf5708244ed9a963894d6cb4a20.setIcon(icon_4028a25d2794418e85400c5bbfab9b6f);
+        
+    
+        var popup_eced83ae257c4b819b9328098ea764e9 = L.popup({"maxWidth": 2650});
+
+        
+            var html_31de7baea39e4f8fa63d44ec4d9c8f14 = $(`<div id="html_31de7baea39e4f8fa63d44ec4d9c8f14" style="width: 100.0%; height: 100.0%;">         <h5>STL Rent Strike</h5>         <b>Location:</b> St. Louis, Missouri, USA<br>         <b>Online:</b> <a href=" http://www.stlrentstrike.org/ "target="_blank"> http://www.stlrentstrike.org/</a>.     </div>`)[0];
+            popup_eced83ae257c4b819b9328098ea764e9.setContent(html_31de7baea39e4f8fa63d44ec4d9c8f14);
+        
+
+        marker_239bfaf5708244ed9a963894d6cb4a20.bindPopup(popup_eced83ae257c4b819b9328098ea764e9)
+        ;
+
+        
+    
+    
+            var marker_55b83833077440eaa9efe37fde4a6575 = L.marker(
+                [43.614527102335835, -79.57971119761659],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_40dc1db1c8cd4ac5967dff709a3ef129 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55b83833077440eaa9efe37fde4a6575.setIcon(icon_40dc1db1c8cd4ac5967dff709a3ef129);
+        
+    
+        var popup_25ee3f50c67e4163a284b00a3ac426b3 = L.popup({"maxWidth": 2650});
+
+        
+            var html_160c7dca4dde42d8bac7bbd56993d6dd = $(`<div id="html_160c7dca4dde42d8bac7bbd56993d6dd" style="width: 100.0%; height: 100.0%;">         <h5>Parkdale Organize</h5>         <b>Location:</b> Parkdale, Toronto, Canada<br>         <b>Online:</b> <a href=" http://parkdaleorganize.ca/ "target="_blank"> http://parkdaleorganize.ca/</a>.     </div>`)[0];
+            popup_25ee3f50c67e4163a284b00a3ac426b3.setContent(html_160c7dca4dde42d8bac7bbd56993d6dd);
+        
+
+        marker_55b83833077440eaa9efe37fde4a6575.bindPopup(popup_25ee3f50c67e4163a284b00a3ac426b3)
+        ;
+
+        
+    
+    
+            var marker_201396177f234c59aaa057965b64a5fe = L.marker(
+                [36.14940531310897, -95.78856605123073],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_295a223265e04020a031f5cd5159e3f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_201396177f234c59aaa057965b64a5fe.setIcon(icon_295a223265e04020a031f5cd5159e3f4);
+        
+    
+        var popup_b5dfbbf5fd9f44bb8ae59c237082e7b4 = L.popup({"maxWidth": 2650});
+
+        
+            var html_89b2c36c57f54f76aca94541d39c5a42 = $(`<div id="html_89b2c36c57f54f76aca94541d39c5a42" style="width: 100.0%; height: 100.0%;">         <h5>Rent Strike Tulsa</h5>         <b>Location:</b> Tulsa, Oklahoma, USA<br>         <b>Online:</b> <a href=" https://www.instagram.com/rentstriketulsa/ "target="_blank"> https://www.instagram.com/rentstriketulsa/</a>.     </div>`)[0];
+            popup_b5dfbbf5fd9f44bb8ae59c237082e7b4.setContent(html_89b2c36c57f54f76aca94541d39c5a42);
+        
+
+        marker_201396177f234c59aaa057965b64a5fe.bindPopup(popup_b5dfbbf5fd9f44bb8ae59c237082e7b4)
+        ;
+
+        
+    
+    
+            var marker_521214532fd540978d26dd34fb9d9bce = L.marker(
+                [32.24633896530205, -110.87169919534901],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_f291cd8eb74047828511789728ad08eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_521214532fd540978d26dd34fb9d9bce.setIcon(icon_f291cd8eb74047828511789728ad08eb);
+        
+    
+        var popup_8a041c32576b40d9a5ba56508456bad0 = L.popup({"maxWidth": 2650});
+
+        
+            var html_ea1f3fa88c6a44009f994e891764daa6 = $(`<div id="html_ea1f3fa88c6a44009f994e891764daa6" style="width: 100.0%; height: 100.0%;">         <h5>Tucson Rent Strike</h5>         <b>Location:</b> Tucson, Arizona, USA<br>         <b>Online:</b> <a href=" http://tucsonrentstrike.com/ "target="_blank"> http://tucsonrentstrike.com/</a>.     </div>`)[0];
+            popup_8a041c32576b40d9a5ba56508456bad0.setContent(html_ea1f3fa88c6a44009f994e891764daa6);
+        
+
+        marker_521214532fd540978d26dd34fb9d9bce.bindPopup(popup_8a041c32576b40d9a5ba56508456bad0)
+        ;
+
+        
+    
+    
+            var marker_d3f0129a7b2d4a368cba5bbab5ad6c11 = L.marker(
+                [49.26026981878598, -122.95687031826635],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_0960d7982d0b4887adf0cf6fe1285058 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d3f0129a7b2d4a368cba5bbab5ad6c11.setIcon(icon_0960d7982d0b4887adf0cf6fe1285058);
+        
+    
+        var popup_0b350e371e6647149c6e4a8a7ff99e3e = L.popup({"maxWidth": 2650});
+
+        
+            var html_8a4a71b91fa64f1089ed81987eaca912 = $(`<div id="html_8a4a71b91fa64f1089ed81987eaca912" style="width: 100.0%; height: 100.0%;">         <h5>Vancouver Tenants Union</h5>         <b>Location:</b> Vancouver, British Columbia, Canada<br>         <b>Online:</b> <a href=" http://vancouvertenantsunion.ca/ "target="_blank"> http://vancouvertenantsunion.ca/</a>.     </div>`)[0];
+            popup_0b350e371e6647149c6e4a8a7ff99e3e.setContent(html_8a4a71b91fa64f1089ed81987eaca912);
+        
+
+        marker_d3f0129a7b2d4a368cba5bbab5ad6c11.bindPopup(popup_0b350e371e6647149c6e4a8a7ff99e3e)
+        ;
+
+        
+    
+    
+            var marker_74435efe3de64513a5e6ac59c5b347d8 = L.marker(
+                [42.31273048649118, -71.58279137235287],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_71b3b8fffd8d47dcbb87c9de02dede3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_74435efe3de64513a5e6ac59c5b347d8.setIcon(icon_71b3b8fffd8d47dcbb87c9de02dede3a);
+        
+    
+        var popup_d6d16d93be0c4e44be2e0c798eb8956a = L.popup({"maxWidth": 2650});
+
+        
+            var html_f618b5d41501496e849f2fd7cd5ffe20 = $(`<div id="html_f618b5d41501496e849f2fd7cd5ffe20" style="width: 100.0%; height: 100.0%;">         <h5>Tenant and Housing Association of Worcester</h5>         <b>Location:</b> Worcester, Massachusetts, USA<br>         <b>Online:</b> <a href=" https://twitter.com/worcesterthaw "target="_blank"> https://twitter.com/worcesterthaw</a>.     </div>`)[0];
+            popup_d6d16d93be0c4e44be2e0c798eb8956a.setContent(html_f618b5d41501496e849f2fd7cd5ffe20);
+        
+
+        marker_74435efe3de64513a5e6ac59c5b347d8.bindPopup(popup_d6d16d93be0c4e44be2e0c798eb8956a)
+        ;
+
+        
+    
+    
+            var marker_a077e2e76e4444b9b1cf29e9bafb42e0 = L.marker(
+                [36.24479310419056, -102.00901014927643],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_d09135fd146d403fa82c9dc78fe37f82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a077e2e76e4444b9b1cf29e9bafb42e0.setIcon(icon_d09135fd146d403fa82c9dc78fe37f82);
+        
+    
+        var popup_feb2e4f5b2834033a9e0b96ce1f9efc7 = L.popup({"maxWidth": 2650});
+
+        
+            var html_ba37b440ff254e9e83feb45db822ff37 = $(`<div id="html_ba37b440ff254e9e83feb45db822ff37" style="width: 100.0%; height: 100.0%;">         <h5>Texoma Workers United</h5>         <b>Location:</b> Sherman, Texas, USA<br>         <b>Online:</b> <a href=" https://www.facebook.com/TexomaWorkersUnited/ "target="_blank"> https://www.facebook.com/TexomaWorkersUnited/</a>.     </div>`)[0];
+            popup_feb2e4f5b2834033a9e0b96ce1f9efc7.setContent(html_ba37b440ff254e9e83feb45db822ff37);
+        
+
+        marker_a077e2e76e4444b9b1cf29e9bafb42e0.bindPopup(popup_feb2e4f5b2834033a9e0b96ce1f9efc7)
+        ;
+
+        
+    
+    
+            var marker_6d8891e552974800af5f0ea54573e3d4 = L.marker(
+                [44.67300626714817, -63.557428995730575],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_8141fbb8776441f987c15f7c55699f2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d8891e552974800af5f0ea54573e3d4.setIcon(icon_8141fbb8776441f987c15f7c55699f2e);
+        
+    
+        var popup_5a364897a1b749329e0fe672e4ab9b09 = L.popup({"maxWidth": 2650});
+
+        
+            var html_0baa8723dae54a72921a0ff7e49b0a9c = $(`<div id="html_0baa8723dae54a72921a0ff7e49b0a9c" style="width: 100.0%; height: 100.0%;">         <h5>ACORN Nova Scotia</h5>         <b>Location:</b> Halifax, Nova Scotia, Canada<br>         <b>Online:</b> <a href=" https://www.facebook.com/groups/1010714742645308/ "target="_blank"> https://www.facebook.com/groups/1010714742645308/</a>.     </div>`)[0];
+            popup_5a364897a1b749329e0fe672e4ab9b09.setContent(html_0baa8723dae54a72921a0ff7e49b0a9c);
+        
+
+        marker_6d8891e552974800af5f0ea54573e3d4.bindPopup(popup_5a364897a1b749329e0fe672e4ab9b09)
+        ;
+
+        
+    
+    
+            var marker_17b1de3d9e294675a6df0c8214afbf88 = L.marker(
+                [41.15710116221657, -81.39222009681026],
+                {"control": true, "name": "Rent Strike Groups", "overlay": true}
+            ).addTo(map_4ff853280254409cb1964cf992508158);
+        
+    
+            var icon_8a7b8895893e4100aa450667797adefb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_17b1de3d9e294675a6df0c8214afbf88.setIcon(icon_8a7b8895893e4100aa450667797adefb);
+        
+    
+        var popup_46633da1a24e4be1bd93016f7dad723d = L.popup({"maxWidth": 2650});
+
+        
+            var html_afc7d28d53e1416f977988de452419a8 = $(`<div id="html_afc7d28d53e1416f977988de452419a8" style="width: 100.0%; height: 100.0%;">         <h5>Kent Tenants Union</h5>         <b>Location:</b> Kent, Ohio, USA<br>         <b>Online:</b> <a href=" https://www.facebook.com/groups/566230710905329/ "target="_blank"> https://www.facebook.com/groups/566230710905329/</a>.     </div>`)[0];
+            popup_46633da1a24e4be1bd93016f7dad723d.setContent(html_afc7d28d53e1416f977988de452419a8);
+        
+
+        marker_17b1de3d9e294675a6df0c8214afbf88.bindPopup(popup_46633da1a24e4be1bd93016f7dad723d)
+        ;
+
+        
+    
+</script>
